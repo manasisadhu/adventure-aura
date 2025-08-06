@@ -1,28 +1,42 @@
+import Image from "next/image";
 import Link from "next/link";
 import ThemeToggleButton from "../customui/ThemeToggleButton";
+import { Button } from "../shadcnui/button";
+import Desktopnav from "./Desktopnav";
+import Mobilenav from "./Mobilenav";
 
 const Header = () => {
-  return (
-    <header
-      className="border-b shadow"
-      aria-label="app-header">
-      <div className="container mx-auto flex items-center justify-between px-6 py-3">
-        <Link href={"/"}>
-          <h1
-            className="text-2xl font-semibold"
-            aria-label="App Name">
-            NST App
-          </h1>
-        </Link>
+	return (
+		<section className="absolute right-0 left-0 bg-black/10 backdrop-blur-md dark:bg-white/5">
+			<div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+				<div className="flex items-center gap-2">
+					<Link href={"/"}>
+						<Image
+							src={"/logo.svg"}
+							alt="logo"
+							height={200}
+							width={200}
+							className=""
+						/>
+					</Link>
+					<ThemeToggleButton />
+				</div>
+				{/* desktopnav  */}
+				<div className="text-md hidden items-center gap-6 font-semibold lg:flex">
+					<Desktopnav />
+				</div>
 
-        <nav className="flex items-center gap-4">
-          <Link href={"/"}>Home</Link>
+				{/* mobilenav  */}
+				<div className="block lg:hidden">
+					<Mobilenav />
+				</div>
 
-          <ThemeToggleButton />
-        </nav>
-      </div>
-    </header>
-  );
+				<Button className="hidden bg-amber-600 p-6 lg:flex">
+					Plan Your Trip
+				</Button>
+			</div>
+		</section>
+	);
 };
 
 export default Header;
