@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero/Hero";
+import About from "@/components/Packages/About";
 import Package from "@/components/Packages/Package";
 import { Metadata } from "next";
 
@@ -15,6 +16,8 @@ const page = () => {
 				<Hero />
 				{/* package  */}
 				<Package />
+				{/* about us  */}
+				<About />
 			</section>
 		</>
 	);
