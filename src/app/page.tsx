@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero/Hero";
+import Package from "@/components/Packages/Package";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,6 +13,8 @@ const page = () => {
 			<section className="">
 				{/* hero  */}
 				<Hero />
+				{/* package  */}
+				<Package />
 			</section>
 		</>
 	);
