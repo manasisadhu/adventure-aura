@@ -31,7 +31,7 @@ const Header = () => {
 					<Mobilenav />
 				</div>
 
-				<Badge className="hidden bg-amber-600 p-4 lg:flex">
+				<Badge className="hidden bg-orange-400 p-4 lg:flex">
 					Plan Your Trip
 				</Badge>
 			</div>

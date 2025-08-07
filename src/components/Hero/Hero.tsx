@@ -22,7 +22,7 @@ const Hero = () => {
 						</div>
 
 						<div className="mt-6 flex flex-col gap-5 md:flex-row">
-							<Button className="bg-amber-600 p-6 hover:bg-amber-500">
+							<Button className="bg-orange-400 p-6 hover:bg-amber-500">
 								Start planning
 								<SquareArrowRight size={24} />
 							</Button>
