@@ -1,6 +1,8 @@
 import Hero from "@/components/Hero/Hero";
 import About from "@/components/Packages/About";
+import Destination from "@/components/Packages/Destination";
 import Package from "@/components/Packages/Package";
+import Us from "@/components/Packages/Us";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,6 +20,10 @@ const page = () => {
 				<Package />
 				{/* about us  */}
 				<About />
+				{/* destinations  */}
+				<Destination />
+				{/* why us  */}
+				<Us />
 			</section>
 		</>
 	);
