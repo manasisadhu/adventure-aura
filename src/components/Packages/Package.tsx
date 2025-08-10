@@ -4,7 +4,7 @@ import { DirectionAwareHover } from "../ui/direction-aware-hover";
 const Package = () => {
 	const imageUrl = "/home/pack.jpg";
 	const image = "/home/pack2.jpg";
-	const Url = "/home/pack3.jpg";
+	const Url = "/home/raja.jpg";
 	return (
 		<section className="">
 			<div className="space-y-8 text-center">

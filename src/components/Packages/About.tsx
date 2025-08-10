@@ -37,7 +37,7 @@ const About = () => {
 					</div>
 
 					{/* image button sec  */}
-					<div className="flex items-center justify-center gap-5">
+					<div className="flex flex-col items-center justify-center gap-5 md:flex-row">
 						<div className="">
 							<Image
 								src={"/home/video.jpg"}

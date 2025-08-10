@@ -6,7 +6,7 @@ const Hero = () => {
 	return (
 		<>
 			<div className="gap-4 bg-[url('/home/hero.jpg')] bg-cover bg-center bg-no-repeat">
-				<div className="flex h-dvh flex-col items-start justify-center bg-black/40 bg-cover bg-center">
+				<div className="flex h-dvh flex-col items-start justify-center bg-black/40 bg-cover bg-center text-white">
 					<div className="mx-auto w-full max-w-7xl gap-6 px-6 py-10">
 						<Badge className="mb-6 rounded-4xl bg-white/30 p-2">
 							Experience Luxury Travel
