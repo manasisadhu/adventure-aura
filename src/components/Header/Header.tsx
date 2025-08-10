@@ -7,7 +7,7 @@ import Mobilenav from "./Mobilenav";
 
 const Header = () => {
 	return (
-		<section className="fixed right-0 left-0 bg-black/10 backdrop-blur-md dark:bg-white/5">
+		<section className="fixed right-0 left-0 z-[10] bg-black/10 backdrop-blur-md dark:bg-white/5">
 			<div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 				<div className="flex items-center gap-2">
 					<Link href={"/"}>

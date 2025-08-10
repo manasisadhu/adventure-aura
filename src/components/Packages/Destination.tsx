@@ -8,11 +8,11 @@ const destination = () => {
 	const pic = "/home/home-destination4.jpg";
 	const box = "/home/home-destination5-1.jpg";
 	return (
-		<section className="">
-			<div className="">
-				<div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-18 md:flex-row">
+		<section className="mx-auto max-w-7xl px-6 py-18">
+			<div className="space-y-6">
+				<div className="flex flex-col items-center justify-between gap-4 md:flex-row">
 					<div className="space-y-8 text-center">
-						<Badge className="mt-10 rounded-4xl bg-orange-400/20 p-4 text-2xl font-medium text-orange-600">
+						<Badge className="rounded-4xl bg-orange-400/20 p-4 text-2xl font-medium text-orange-600">
 							Choose Your Place
 						</Badge>
 						<div className="text-5xl font-bold">
@@ -24,38 +24,35 @@ const destination = () => {
 						</div>
 					</div>
 					{/* img  */}
-					<div className="z-[-10] flex items-center justify-center">
-						<DirectionAwareHover imageUrl={imageUrl}>
-							<p className="text-xl font-bold">Amazon Forest</p>
-						</DirectionAwareHover>
-					</div>
+
+					<DirectionAwareHover imageUrl={imageUrl}>
+						<p className="text-xl font-bold">Amazon Forest</p>
+					</DirectionAwareHover>
+
 					{/* img 2  */}
-					<div className="z-[-10] flex items-center justify-center">
-						<DirectionAwareHover imageUrl={image}>
-							<p className="text-xl font-bold">New Zealand</p>
-						</DirectionAwareHover>
-					</div>
+
+					<DirectionAwareHover imageUrl={image}>
+						<p className="text-xl font-bold">New Zealand</p>
+					</DirectionAwareHover>
 				</div>
-				<div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-4 md:flex-row">
+				<div className="flex flex-col items-center justify-between gap-4 md:flex-row">
 					{/* img 3  */}
-					<div className="z-[-10] flex items-center justify-center">
-						<DirectionAwareHover imageUrl={Url}>
-							<p className="text-xl font-bold">London</p>
-						</DirectionAwareHover>
-					</div>
+
+					<DirectionAwareHover imageUrl={Url}>
+						<p className="text-xl font-bold">London</p>
+					</DirectionAwareHover>
 
 					{/* img 4 */}
-					<div className="z-[-10] flex items-center justify-center">
-						<DirectionAwareHover imageUrl={pic}>
-							<p className="text-xl font-bold">Europe</p>
-						</DirectionAwareHover>
-					</div>
+
+					<DirectionAwareHover imageUrl={pic}>
+						<p className="text-xl font-bold">Europe</p>
+					</DirectionAwareHover>
+
 					{/* img 5*/}
-					<div className="z-[-10] flex items-center justify-center">
-						<DirectionAwareHover imageUrl={box}>
-							<p className="text-xl font-bold">Africa</p>
-						</DirectionAwareHover>
-					</div>
+
+					<DirectionAwareHover imageUrl={box}>
+						<p className="text-xl font-bold">Africa</p>
+					</DirectionAwareHover>
 				</div>
 			</div>
 		</section>
