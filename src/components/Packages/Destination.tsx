@@ -12,7 +12,7 @@ const destination = () => {
 			<div className="space-y-6">
 				<div className="flex flex-col items-center justify-between gap-4 md:flex-row">
 					<div className="space-y-8 text-center">
-						<Badge className="rounded-4xl bg-orange-400/20 p-4 text-2xl font-medium text-orange-600">
+						<Badge className="rounded-4xl bg-orange-400/20 p-4 text-2xl font-medium text-orange-600 dark:bg-white/20 dark:text-white">
 							Choose Your Place
 						</Badge>
 						<div className="text-5xl font-bold">
