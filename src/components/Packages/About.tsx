@@ -6,7 +6,7 @@ import { Button } from "../shadcnui/button";
 
 const About = () => {
 	return (
-		<section className="bg-amber-400/10">
+		<section className="bg-amber-400/10 dark:bg-black/20">
 			<div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-32 px-6 py-10 md:flex-row">
 				{/* img  */}
 				<div className="">

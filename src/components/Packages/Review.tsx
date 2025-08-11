@@ -14,10 +14,10 @@ const Review = () => {
 					size={54}
 					className="rotate-180 text-orange-500"
 				/>
-				<div className="">
+				<div className="w-auto text-center lg:w-xl">
 					“An absolutely incredible experience! The attention to
-					detail and personalized <br /> service made our Maldives
-					trip unforgettable. Highly recommend!”
+					detail and personalized service made our Maldives trip
+					unforgettable. Highly recommend!”
 				</div>
 				<Image
 					src={"/home/home-review.png"}

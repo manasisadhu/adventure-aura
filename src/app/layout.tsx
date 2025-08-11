@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header/Header";
 import ThemeProvider from "@/components/ThemeProvider";
 import { RootLayoutProps } from "@/lib/types";
@@ -16,6 +17,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
 					<Header />
 
 					<main>{children}</main>
+					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>
