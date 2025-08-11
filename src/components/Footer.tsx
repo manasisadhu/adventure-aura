@@ -35,7 +35,7 @@ const Footer = () => {
 							alt="pic"
 							height={200}
 							width={200}
-							className="h-[450] w-[400]"
+							className="hidden h-[450] w-[400] md:flex"
 						/>
 					</div>
 				</div>
@@ -43,66 +43,65 @@ const Footer = () => {
 			{/* footer top  */}
 			{/* footer  */}
 			<div className="bg-black text-white">
-				<div className="mx-auto flex max-w-7xl flex-col items-start justify-center px-6 py-10 md:flex-row md:items-center md:justify-between">
-					{/* logo */}
-					<div className="space-y-6">
-						<div className="">
-							<Link href={"/"}>
-								<Image
-									src={"/logo.svg"}
-									alt="logo"
-									height={200}
-									width={200}
-									className=""
-								/>
-							</Link>
-						</div>
-						<div className="">
-							<div className="">
+				<div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-10 md:flex-row md:items-start md:justify-between">
+					{/* Logo & tagline */}
+					<div className="max-w-xs space-y-6">
+						<Link href={"/"}>
+							<Image
+								src={"/logo.svg"}
+								alt="logo"
+								height={200}
+								width={200}
+							/>
+						</Link>
+						<div>
+							<div>
 								Your trusted partner for extraordinary travel
 							</div>
-							<div className="">experiences since 2015.</div>
+							<div>experiences since 2015.</div>
 						</div>
 					</div>
-					{/* link  */}
+
+					{/* Quick Links */}
 					<div className="space-y-4">
-						<div className="text-2xl">Quick Links</div>
-						<div className="">Home</div>
-						<div className="">About </div>
-						<div className="">Package</div>
-						<div className="">Contact</div>
+						<div className="text-2xl font-semibold">
+							Quick Links
+						</div>
+						<div>Home</div>
+						<div>About</div>
+						<div>Package</div>
+						<div>Contact</div>
 					</div>
-					{/* contact  */}
+
+					{/* Contact */}
 					<div className="space-y-4">
-						<div className="text-2xl">Contact</div>
-						<div className="">
-							<div className="">
-								455 West Orchard Street Kings
-							</div>
-							<div className="">Mountain, NC 280867</div>
+						<div className="text-2xl font-semibold">Contact</div>
+						<div>
+							<div>455 West Orchard Street Kings</div>
+							<div>Mountain, NC 280867</div>
 						</div>
 						<div className="flex items-center gap-2">
 							<Phone size={24} />
-
-							<div className="">+088 (246) 642-27-10</div>
+							<span>+088 (246) 642-27-10</span>
 						</div>
 						<div className="flex items-center gap-2">
 							<MailMinus size={24} />
-							<div className="">example@gmail.com</div>
+							<span>example@gmail.com</span>
 						</div>
 					</div>
-					{/* follow  */}
+
+					{/* Follow Us */}
 					<div className="space-y-4">
-						<div className="text-2xl">Follow Us</div>
-						<div className="">Instagram</div>
-						<div className="">Twitter</div>
-						<div className="">Linkedin</div>
-						<div className="">Facebook</div>
+						<div className="text-2xl font-semibold">Follow Us</div>
+						<div>Instagram</div>
+						<div>Twitter</div>
+						<div>Linkedin</div>
+						<div>Facebook</div>
 					</div>
 				</div>
-				{/* footer  */}
 
-				<div className="border-t-2 border-white/10 py-4 text-center">
+				{/* Bottom Bar */}
+				<div className="border-t border-white/10 py-4 text-center text-sm text-white/70">
 					Copyright © 2025 Travel Agency
 				</div>
 			</div>
