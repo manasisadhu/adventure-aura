@@ -1,9 +1,9 @@
 import Hero from "@/components/Hero/Hero";
-import About from "@/components/Packages/About";
-import Destination from "@/components/Packages/Destination";
-import Package from "@/components/Packages/Package";
-import Review from "@/components/Packages/Review";
-import Us from "@/components/Packages/Us";
+import About from "@/components/Home/About";
+import Destination from "@/components/Home/Destination";
+import Package from "@/components/Home/Package";
+import Review from "@/components/Home/Review";
+import Us from "@/components/Home/Us";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
