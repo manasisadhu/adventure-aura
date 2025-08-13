@@ -1,3 +1,4 @@
+import Custom from "@/components/About/Custom";
 import Abouthero from "@/components/Hero/Abouthero";
 
 const page = () => {
@@ -5,6 +6,8 @@ const page = () => {
 		<>
 			{/* hero  */}
 			<Abouthero />
+			{/* customized  */}
+			<Custom />
 		</>
 	);
 };
