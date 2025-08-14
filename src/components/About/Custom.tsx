@@ -22,15 +22,14 @@ const Custom = () => {
 					</div>
 				</div>
 				{/* img  */}
-				<div className="">
-					<Image
-						src={"/About/trek.jpg"}
-						alt="pic"
-						height={400}
-						width={400}
-						className="h-80 w-350 rounded-3xl"
-					/>
-				</div>
+
+				<Image
+					src={"/About/trek.jpg"}
+					alt="pic"
+					height={800}
+					width={800}
+					className="h-auto w-full rounded-3xl"
+				/>
 			</div>
 		</>
 	);
