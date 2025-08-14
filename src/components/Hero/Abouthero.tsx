@@ -1,7 +1,16 @@
+"use client";
+
 import { Earth, Headset, UserPen, Users } from "lucide-react";
+import { useInView } from "react-intersection-observer";
+import { HyperText } from "../magicui/hyper-text";
 import { Badge } from "../shadcnui/badge";
 
 const Abouthero = () => {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 1,
+	});
+
 	return (
 		<>
 			<div className="bg-[url('/about/about-hero.jpg')] bg-cover bg-center bg-no-repeat">
@@ -16,13 +25,21 @@ const Abouthero = () => {
 					</div>
 				</div>
 			</div>
-			<div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-8 gap-y-6 px-6 py-10 text-center lg:grid-cols-4">
+			<div
+				className="mx-auto grid max-w-7xl grid-cols-2 gap-x-8 gap-y-6 px-6 py-10 text-center lg:grid-cols-4"
+				ref={ref}>
 				<div>
 					<Users
 						size={34}
 						className="mx-auto"
 					/>
-					<div className="text-4xl font-semibold">10+</div>
+					{inView && (
+						<HyperText
+							className="text-4xl font-semibold"
+							animateOnHover={false}>
+							10+
+						</HyperText>
+					)}
 					<div>Years of Experience</div>
 				</div>
 				<div>
@@ -30,7 +47,15 @@ const Abouthero = () => {
 						size={34}
 						className="mx-auto"
 					/>
-					<div className="text-4xl font-semibold">500+</div>
+
+					{inView && (
+						<HyperText
+							className="text-4xl font-semibold"
+							animateOnHover={false}>
+							500+
+						</HyperText>
+					)}
+
 					<div>Destinations</div>
 				</div>
 				<div>
@@ -38,7 +63,14 @@ const Abouthero = () => {
 						size={34}
 						className="mx-auto"
 					/>
-					<div className="text-4xl font-semibold">24/7+</div>
+					{inView && (
+						<HyperText
+							className="text-4xl font-semibold"
+							animateOnHover={false}>
+							24/7+
+						</HyperText>
+					)}
+
 					<div>Customer Support</div>
 				</div>
 				<div>
@@ -46,7 +78,14 @@ const Abouthero = () => {
 						size={34}
 						className="mx-auto"
 					/>
-					<div className="text-4xl font-semibold">98%</div>
+					{inView && (
+						<HyperText
+							className="text-4xl font-semibold"
+							animateOnHover={false}>
+							98%
+						</HyperText>
+					)}
+
 					<div>Happy Clients</div>
 				</div>
 			</div>

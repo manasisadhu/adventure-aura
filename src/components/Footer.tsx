@@ -33,9 +33,9 @@ const Footer = () => {
 						<Image
 							src={"/image-12.png"}
 							alt="pic"
-							height={200}
-							width={200}
-							className="hidden h-[450] w-[400] md:flex"
+							height={800}
+							width={800}
+							className="hidden h-[400] w-full md:flex"
 						/>
 					</div>
 				</div>
