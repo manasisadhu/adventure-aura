@@ -15,7 +15,7 @@ const Desktopnav = () => {
 					About
 				</Link>
 				<Link
-					href={"/"}
+					href={"/package"}
 					className="hover:text-orange-600">
 					Packages
 				</Link>

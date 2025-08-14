@@ -8,7 +8,7 @@ const About = () => {
 			<section className="bg-yellow-200/20">
 				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-20 px-6 py-10 lg:grid-cols-2">
 					{/* coloms 1  */}
-					<div className="grid grid-cols-1 gap-5 lg:col-span-1 lg:grid-cols-2">
+					<div className="grid grid-cols-1 gap-5 md:col-span-1 md:grid-cols-2">
 						<div className="space-y-4">
 							<Image
 								src={"/about/about-us11.jpg"}

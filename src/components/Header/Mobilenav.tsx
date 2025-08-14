@@ -36,7 +36,7 @@ const Mobilenav = () => {
 						About
 					</Link>
 					<Link
-						href={"/services"}
+						href={"/package"}
 						className="hover:text-red-400">
 						Packages
 					</Link>

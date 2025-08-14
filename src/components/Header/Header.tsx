@@ -16,7 +16,7 @@ const Header = () => {
 							alt="logo"
 							height={200}
 							width={200}
-							className="h-[30] w-[250]"
+							className="h-[30] w-[180]"
 						/>
 					</Link>
 					<ThemeToggleButton />
