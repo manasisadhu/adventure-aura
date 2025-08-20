@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import CommonBtn from "../customui/CommonBtn";
 import ThemeToggleButton from "../customui/ThemeToggleButton";
-import { Badge } from "../shadcnui/badge";
 import Desktopnav from "./Desktopnav";
 import Mobilenav from "./Mobilenav";
 
 const Header = () => {
 	return (
-		<section className="fixed right-0 left-0 z-[10] bg-black/10 text-white backdrop-blur-md dark:bg-white/5">
-			<div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+		<header className="fixed right-0 left-0 z-[10] bg-black/10 text-white backdrop-blur-md dark:bg-white/5">
+			<nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 				<div className="flex items-center gap-2">
 					<Link href={"/"}>
 						<Image
@@ -22,20 +22,23 @@ const Header = () => {
 					<ThemeToggleButton />
 				</div>
 				{/* desktopnav  */}
-				<div className="text-md hidden items-center gap-6 font-semibold lg:flex">
+				<div className="text-md hidden items-center gap-6 font-semibold md:block">
 					<Desktopnav />
 				</div>
 
 				{/* mobilenav  */}
-				<div className="block lg:hidden">
+				<div className="block md:hidden">
 					<Mobilenav />
 				</div>
-
-				<Badge className="hidden bg-orange-400 p-4 text-white lg:flex">
-					Plan Your Trip
-				</Badge>
-			</div>
-		</section>
+				<div className="hidden md:flex">
+					<CommonBtn
+						className="cursor-pointer bg-amber-500 text-white hover:bg-orange-400"
+						href="/package">
+						Plan Your Trip
+					</CommonBtn>
+				</div>
+			</nav>
+		</header>
 	);
 };
 

@@ -22,17 +22,16 @@ type cardproptype = {
 const Card = ({ data }: cardproptype) => {
 	return (
 		<>
-			<div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-6 md:flex-row md:justify-between">
-				<div className="">
-					<Image
-						src={data.img}
-						alt="pic "
-						height={200}
-						width={200}
-						className="h-auto w-full rounded-2xl"
-					/>
-				</div>
-				<div className="flex flex-col items-start justify-center gap-4">
+			<div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-24 px-6 md:flex-row md:justify-between">
+				<Image
+					src={data.img}
+					alt="pic "
+					height={720}
+					width={1080}
+					className="aspect-[3/2] h-auto w-full rounded-2xl object-cover"
+				/>
+
+				<div className="flex w-full flex-col items-start justify-center gap-4">
 					<Badge className="rounded-4xl bg-orange-400/30 px-8 py-1 text-lg text-orange-900">
 						{data.title}
 					</Badge>

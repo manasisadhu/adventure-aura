@@ -1,6 +1,6 @@
-import { SquareArrowRight, SquarePlay } from "lucide-react";
+import { ChevronsRight, CirclePlay } from "lucide-react";
+import CommonBtn from "../customui/CommonBtn";
 import { Badge } from "../shadcnui/badge";
-import { Button } from "../shadcnui/button";
 
 const Hero = () => {
 	return (
@@ -19,15 +19,23 @@ const Hero = () => {
 						unforgettable memories.
 					</div>
 
-					<div className="space-x-6">
-						<Button className="bg-orange-400 p-6 text-white hover:bg-amber-500">
-							Start planning
-							<SquareArrowRight size={24} />
-						</Button>
-						<Button className="bg-white/30 p-6 text-white hover:bg-amber-600">
-							<SquarePlay size={24} />
-							Watch Video
-						</Button>
+					<div className="flex justify-center gap-4 md:justify-start">
+						<div className="">
+							<CommonBtn
+								href={"/contact"}
+								className="cursor-pointer bg-amber-500 px-4 text-white hover:bg-orange-400">
+								Start Planing with us
+								<ChevronsRight className="mt-0.5" />
+							</CommonBtn>
+						</div>
+						<div className="">
+							<CommonBtn
+								href={"/"}
+								className="cursor-pointer bg-white/20 px-4 text-white backdrop-blur-md hover:bg-orange-400/20">
+								<CirclePlay className="mt-0.5" />
+								Watch Video
+							</CommonBtn>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -36,3 +44,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+<div className="flex gap-2"></div>;
