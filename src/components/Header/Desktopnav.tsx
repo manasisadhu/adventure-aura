@@ -6,22 +6,22 @@ const Desktopnav = () => {
 			<div className="flex items-center gap-3">
 				<Link
 					href={"/"}
-					className="hover:text-orange-600">
+					className="hover:text-amber-500">
 					Home
 				</Link>
 				<Link
 					href={"/about"}
-					className="hover:text-orange-600">
+					className="hover:text-amber-500">
 					About
 				</Link>
 				<Link
 					href={"/package"}
-					className="hover:text-orange-600">
+					className="hover:text-amber-500">
 					Packages
 				</Link>
 				<Link
 					href={"/"}
-					className="hover:text-orange-600">
+					className="hover:text-amber-500">
 					Contact
 				</Link>
 			</div>

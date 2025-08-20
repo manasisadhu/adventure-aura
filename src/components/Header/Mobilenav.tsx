@@ -1,8 +1,10 @@
 import { Menu } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import {
 	Sheet,
 	SheetContent,
+	SheetDescription,
 	SheetHeader,
 	SheetTitle,
 	SheetTrigger,
@@ -18,32 +20,41 @@ const Mobilenav = () => {
 					size={24}
 				/>
 			</SheetTrigger>
-			<SheetContent>
+			<SheetDescription></SheetDescription>
+			<SheetContent className="border-none bg-white/10 backdrop-blur-md">
 				<SheetHeader>
-					<SheetTitle className="flex justify-center pb-4">
-						<Link href={"/"}></Link>
+					<SheetTitle className="flex justify-center border-b-2 pb-4">
+						<Link href={"/"}>
+							<Image
+								src={"/logo.svg"}
+								alt="logo"
+								height={200}
+								width={200}
+								className="h-[30] w-[180]"
+							/>
+						</Link>
 					</SheetTitle>
 				</SheetHeader>
-				<div className="grid place-items-center gap-4 font-semibold">
+				<div className="grid place-items-center gap-4 font-semibold text-white">
 					<Link
 						href={"/"}
-						className="hover:text-red-400">
+						className="hover:text-orange-500">
 						Home
 					</Link>
 					<Link
 						href={"/about"}
-						className="hover:text-red-400">
+						className="hover:text-orange-500">
 						About
 					</Link>
 					<Link
 						href={"/package"}
-						className="hover:text-red-400">
+						className="hover:text-orange-500">
 						Packages
 					</Link>
 
 					<Link
 						href={"/contact"}
-						className="hover:text-red-400">
+						className="hover:text-orange-500">
 						Contact
 					</Link>
 				</div>
