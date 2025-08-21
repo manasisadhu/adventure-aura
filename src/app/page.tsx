@@ -1,9 +1,9 @@
 import Hero from "@/components/Hero/Hero";
-import About from "@/components/Home/About";
 import Destination from "@/components/Home/Destination";
 import Package from "@/components/Home/Package";
 import Review from "@/components/Home/Review";
 import Us from "@/components/Home/Us";
+import VideoSec from "@/components/Home/VideoSec";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,19 +14,28 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<>
-			<section className="">
+			<section>
 				{/* hero  */}
 				<Hero />
 				{/* package  */}
 				<Package />
+
 				{/* about us  */}
-				<About />
+
+				<section
+					className="mx-auto px-6 pt-14 text-center md:pt-18"
+					id="video">
+					<h1 className="mb-10 text-4xl font-bold">
+						Let&apos;s Watch Our Latest Videos
+					</h1>
+					<VideoSec />
+				</section>
 				{/* destinations  */}
 				<Destination />
 				{/* why us  */}
 				<Us />
 				{/* review  */}
-				<section className="mx-auto max-w-7xl px-6 py-20">
+				<section className="mx-auto max-w-7xl px-6 py-14 md:py-18">
 					<Review />
 				</section>
 			</section>

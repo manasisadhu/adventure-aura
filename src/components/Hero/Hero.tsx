@@ -1,15 +1,16 @@
 import { ChevronsRight, CirclePlay } from "lucide-react";
 import CommonBtn from "../customui/CommonBtn";
-import { Badge } from "../shadcnui/badge";
+
+import Badges from "../customui/Badges";
 
 const Hero = () => {
 	return (
-		<div className="bg-[url('/home/hero.jpg')] bg-cover bg-center bg-no-repeat">
-			<div className="flex h-dvh flex-col justify-center bg-black/40 text-center text-white md:text-start">
+		<div className="bg-[url('/home/hero.jpg')] bg-cover bg-fixed bg-center bg-no-repeat">
+			<div className="flex h-[80dvh] flex-col justify-center bg-black/50 text-center text-white md:h-[94dvh] md:text-start lg:h-dvh">
 				<div className="mx-auto w-full max-w-7xl space-y-6 px-6">
-					<Badge className="rounded-4xl bg-white/30 p-2 text-white">
+					<Badges className="rounded-4xl bg-white/30 text-white">
 						Experience Luxury Travel
-					</Badge>
+					</Badges>
 					<div className="w-auto text-3xl font-bold md:w-2xl md:text-6xl">
 						Explore the World Like Never Before
 					</div>
@@ -23,14 +24,14 @@ const Hero = () => {
 						<div className="">
 							<CommonBtn
 								href={"/contact"}
-								className="cursor-pointer bg-amber-500 px-4 text-white hover:bg-orange-400">
+								className="">
 								Start Planing with us
 								<ChevronsRight className="mt-0.5" />
 							</CommonBtn>
 						</div>
 						<div className="">
 							<CommonBtn
-								href={"/"}
+								href={"#video"}
 								className="cursor-pointer bg-white/20 px-4 text-white backdrop-blur-md hover:bg-orange-400/20">
 								<CirclePlay className="mt-0.5" />
 								Watch Video

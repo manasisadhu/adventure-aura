@@ -1,17 +1,10 @@
-import { Quote } from "lucide-react";
-
 const Us = () => {
 	return (
 		<>
-			<div className="mt-5 h-[500] bg-[url('/home/home-tour.jpg')] bg-cover bg-center bg-no-repeat">
-				<div className="flex h-dvh flex-col items-center justify-center">
-					<div className="flex text-5xl font-bold text-white">
-						<Quote
-							size={24}
-							className="scale-x-[-1]"
-						/>
-						Crafting Unforgetable Journeys
-						<Quote size={24} />
+			<div className="bg-[url('/home/home-tour.jpg')] bg-cover bg-fixed bg-center bg-no-repeat">
+				<div className="flex h-[500] items-center justify-center bg-black/20 text-center text-5xl font-bold text-white backdrop-blur-[2px]">
+					<div className="leading-14">
+						&quot;Crafting Unforgetable Journeys&quot;
 					</div>
 				</div>
 			</div>

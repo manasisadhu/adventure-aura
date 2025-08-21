@@ -1,4 +1,6 @@
-import { Badge } from "../shadcnui/badge";
+import { ChevronsRight } from "lucide-react";
+import Badges from "../customui/Badges";
+import CommonBtn from "../customui/CommonBtn";
 import { DirectionAwareHover } from "../ui/direction-aware-hover";
 
 const destination = () => {
@@ -8,52 +10,66 @@ const destination = () => {
 	const pic = "/home/home-destination4.jpg";
 	const box = "/home/home-destination5-1.jpg";
 	return (
-		<section className="mx-auto max-w-7xl px-6 py-18">
-			<div className="space-y-6">
-				<div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-					<div className="space-y-8 text-center">
-						<Badge className="rounded-4xl bg-orange-400/20 p-4 text-2xl font-medium text-orange-600 dark:bg-white/20 dark:text-white">
-							Choose Your Place
-						</Badge>
-						<div className="text-5xl font-bold">
-							Popular Destinations
-						</div>
-						<div className="font-medium text-black/50">
-							Join us as we explore the wonders of the globe, one
-							incredible journey at a time.
-						</div>
+		<section className="mx-auto max-w-7xl px-6 py-14 md:py-18">
+			<div className="grid grid-cols-1 place-items-center gap-6 md:grid-cols-3">
+				<div className="grid grid-cols-1 place-items-center gap-6 text-center md:place-items-start md:text-start">
+					<Badges className="text-xl font-medium dark:bg-orange-400/25 dark:text-orange-400">
+						Choose Your Place
+					</Badges>
+					<div className="text-5xl font-bold">
+						Popular Destinations
 					</div>
-					{/* img  */}
-
-					<DirectionAwareHover imageUrl={imageUrl}>
-						<p className="text-xl font-bold">Amazon Forest</p>
-					</DirectionAwareHover>
-
-					{/* img 2  */}
-
-					<DirectionAwareHover imageUrl={image}>
-						<p className="text-xl font-bold">New Zealand</p>
-					</DirectionAwareHover>
+					<div className="font-medium text-black/70 dark:text-white/50">
+						Join us as we explore the wonders of the globe, one
+						incredible journey at a time.
+					</div>
+					<CommonBtn
+						className=""
+						href="/package">
+						Start Planing with us
+						<ChevronsRight className="mt-0.5" />
+					</CommonBtn>
 				</div>
-				<div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-					{/* img 3  */}
 
-					<DirectionAwareHover imageUrl={Url}>
-						<p className="text-xl font-bold">London</p>
-					</DirectionAwareHover>
+				{/* img  */}
 
-					{/* img 4 */}
+				<DirectionAwareHover
+					imageUrl={imageUrl}
+					className="aspect-auto">
+					<p className="text-xl font-bold">Amazon Forest</p>
+				</DirectionAwareHover>
 
-					<DirectionAwareHover imageUrl={pic}>
-						<p className="text-xl font-bold">Europe</p>
-					</DirectionAwareHover>
+				{/* img 2  */}
 
-					{/* img 5*/}
+				<DirectionAwareHover
+					imageUrl={image}
+					className="aspect-auto">
+					<p className="text-xl font-bold">New Zealand</p>
+				</DirectionAwareHover>
 
-					<DirectionAwareHover imageUrl={box}>
-						<p className="text-xl font-bold">Africa</p>
-					</DirectionAwareHover>
-				</div>
+				{/* img 3  */}
+
+				<DirectionAwareHover
+					imageUrl={Url}
+					className="aspect-auto">
+					<p className="text-xl font-bold">London</p>
+				</DirectionAwareHover>
+
+				{/* img 4 */}
+
+				<DirectionAwareHover
+					imageUrl={pic}
+					className="aspect-auto">
+					<p className="text-xl font-bold">Europe</p>
+				</DirectionAwareHover>
+
+				{/* img 5*/}
+
+				<DirectionAwareHover
+					imageUrl={box}
+					className="aspect-auto">
+					<p className="text-xl font-bold">Africa</p>
+				</DirectionAwareHover>
 			</div>
 		</section>
 	);

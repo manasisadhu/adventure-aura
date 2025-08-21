@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
+import Image from "next/image";
 
 export const DirectionAwareHover = ({
 	imageUrl,
@@ -66,7 +67,7 @@ export const DirectionAwareHover = ({
 			onMouseEnter={handleMouseEnter}
 			ref={ref}
 			className={cn(
-				"group/card relative h-60 w-60 overflow-hidden rounded-lg bg-transparent md:h-96 md:w-96",
+				"group/card relative aspect-[3/2] h-auto w-full overflow-hidden rounded-lg bg-transparent md:aspect-[3/3]",
 				className,
 			)}>
 			<AnimatePresence mode="wait">
@@ -83,10 +84,10 @@ export const DirectionAwareHover = ({
 							duration: 0.2,
 							ease: "easeOut",
 						}}>
-						<img
+						<Image
 							alt="image"
 							className={cn(
-								"h-full w-full scale-[1.15] object-cover",
+								"h-full w-full scale-[1.15]",
 								imageClassName,
 							)}
 							width="1000"

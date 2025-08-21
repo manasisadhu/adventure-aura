@@ -1,4 +1,5 @@
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/Footer";
+import FooterTop from "@/components/Footer/FooterTop";
 import Header from "@/components/Header/Header";
 import ThemeProvider from "@/components/ThemeProvider";
 import { RootLayoutProps } from "@/lib/types";
@@ -8,7 +9,8 @@ const RootLayout = ({ children }: RootLayoutProps) => {
 	return (
 		<html
 			lang="en"
-			suppressHydrationWarning>
+			suppressHydrationWarning
+			className="scroll-smooth">
 			<body className="">
 				<ThemeProvider
 					attribute={"class"}
@@ -17,6 +19,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
 					<Header />
 
 					<main>{children}</main>
+					<FooterTop />
 					<Footer />
 				</ThemeProvider>
 			</body>
