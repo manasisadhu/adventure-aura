@@ -15,7 +15,7 @@ const CommonBtn = ({ children, className, href, ...props }: BtnProps) => {
 			<Link href={href}>
 				<Button
 					className={cn(
-						"flex items-center justify-center gap-2 px-6 py-4 text-[14px] leading-none font-bold text-white",
+						"flex cursor-pointer items-center justify-center gap-2 bg-amber-500 px-4 text-white hover:bg-orange-400",
 						className,
 					)}
 					{...props}>

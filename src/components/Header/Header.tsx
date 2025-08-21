@@ -32,7 +32,7 @@ const Header = () => {
 				</div>
 				<div className="hidden md:flex">
 					<CommonBtn
-						className="cursor-pointer bg-amber-500 text-white hover:bg-orange-400"
+						className=""
 						href="/package">
 						Plan Your Trip
 					</CommonBtn>

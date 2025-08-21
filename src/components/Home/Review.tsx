@@ -24,6 +24,7 @@ const Review = () => {
 					alt="pic"
 					height={100}
 					width={100}
+					className="h-[80] w-[80]"
 				/>
 				<div className="text-xl font-bold">JAMES ANDERSON</div>
 			</div>

@@ -1,46 +1,10 @@
-import { MailMinus, Phone, SquareArrowRight } from "lucide-react";
+import { MailMinus, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "./shadcnui/button";
 
 const Footer = () => {
 	return (
-		<section className="">
-			{/* footer top  */}
-			<div className="bg-orange-600">
-				<div className="mx-auto flex max-w-7xl items-center justify-between px-6 text-white">
-					<div className="space-y-6">
-						<div className="text-5xl font-bold">
-							<div className="">Ready to start your</div>
-							<div className="">Adventure ?</div>
-						</div>
-						<div className="">
-							<div className="">
-								Let uscreate the perfect journey. Our travel
-								Experts are
-							</div>
-							<div className="">
-								Readt to craft your dream vacation.
-							</div>
-						</div>
-						<Button className="bg-white p-6 text-orange-400 hover:bg-white">
-							Start planning
-							<SquareArrowRight size={24} />
-						</Button>
-						<div className=""></div>
-					</div>
-					<div className="">
-						<Image
-							src={"/image-12.png"}
-							alt="pic"
-							height={800}
-							width={800}
-							className="hidden h-[400] w-full md:flex"
-						/>
-					</div>
-				</div>
-			</div>
-			{/* footer top  */}
+		<section>
 			{/* footer  */}
 			<div className="bg-black text-white">
 				<div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-10 md:flex-row md:items-start md:justify-between">
@@ -52,6 +16,7 @@ const Footer = () => {
 								alt="logo"
 								height={200}
 								width={200}
+								className="h-[30] w-[180]"
 							/>
 						</Link>
 						<div>
@@ -67,24 +32,51 @@ const Footer = () => {
 						<div className="text-2xl font-semibold">
 							Quick Links
 						</div>
-						<div>Home</div>
-						<div>About</div>
-						<div>Package</div>
-						<div>Contact</div>
+						<div>
+							<Link
+								href={"/"}
+								className="hover:text-amber-500">
+								Home
+							</Link>
+						</div>
+
+						<div>
+							<Link
+								href={"/about"}
+								className="hover:text-amber-500">
+								About
+							</Link>
+						</div>
+
+						<div>
+							<Link
+								href={"/package"}
+								className="hover:text-amber-500">
+								Package
+							</Link>
+						</div>
+
+						<div>
+							<Link
+								href={"contact"}
+								className="hover:text-amber-500">
+								Contact
+							</Link>
+						</div>
 					</div>
 
 					{/* Contact */}
 					<div className="space-y-4">
 						<div className="text-2xl font-semibold">Contact</div>
-						<div>
+						<div className="cursor-pointer hover:text-amber-500">
 							<div>455 West Orchard Street Kings</div>
 							<div>Mountain, NC 280867</div>
 						</div>
-						<div className="flex items-center gap-2">
+						<div className="flex cursor-pointer items-center gap-2 hover:text-amber-500">
 							<Phone size={24} />
 							<span>+088 (246) 642-27-10</span>
 						</div>
-						<div className="flex items-center gap-2">
+						<div className="flex cursor-pointer items-center gap-2 hover:text-amber-500">
 							<MailMinus size={24} />
 							<span>example@gmail.com</span>
 						</div>
@@ -93,10 +85,18 @@ const Footer = () => {
 					{/* Follow Us */}
 					<div className="space-y-4">
 						<div className="text-2xl font-semibold">Follow Us</div>
-						<div>Instagram</div>
-						<div>Twitter</div>
-						<div>Linkedin</div>
-						<div>Facebook</div>
+						<div className="cursor-pointer hover:text-amber-500">
+							Instagram
+						</div>
+						<div className="cursor-pointer hover:text-amber-500">
+							Twitter
+						</div>
+						<div className="cursor-pointer hover:text-amber-500">
+							Linkedin
+						</div>
+						<div className="cursor-pointer hover:text-amber-500">
+							Facebook
+						</div>
 					</div>
 				</div>
 

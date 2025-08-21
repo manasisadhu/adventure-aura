@@ -1,4 +1,4 @@
-import { Badge } from "../shadcnui/badge";
+import Badges from "../customui/Badges";
 import { DirectionAwareHover } from "../ui/direction-aware-hover";
 
 const Package = () => {
@@ -6,15 +6,15 @@ const Package = () => {
 	const image = "/home/pack2.jpg";
 	const Url = "/home/raja.jpg";
 	return (
-		<section className="mx-auto max-w-7xl space-y-9 px-6 py-20">
+		<section className="mx-auto max-w-7xl space-y-9 px-6 pt-14 md:pt-18">
 			<div className="space-y-8 text-center">
-				<Badge className="rounded-3xl bg-orange-400/20 px-6 py-2 text-xl font-medium text-orange-600 dark:bg-white/20 dark:text-white">
+				<Badges className="text-xl font-medium dark:bg-orange-400/25 dark:text-orange-400">
 					POPULAR DESTINATIONS
-				</Badge>
+				</Badges>
 				<div className="text-5xl font-bold">Handpicked Packages</div>
 			</div>
 
-			<div className="flex flex-col items-center gap-6 lg:flex-row lg:justify-between">
+			<div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
 				{/* img  */}
 
 				<DirectionAwareHover imageUrl={imageUrl}>
