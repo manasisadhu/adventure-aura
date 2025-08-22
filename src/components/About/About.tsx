@@ -1,6 +1,6 @@
-import { SquareArrowRight } from "lucide-react";
+import { ChevronsRight } from "lucide-react";
 import Image from "next/image";
-import { Button } from "../shadcnui/button";
+import CommonBtn from "../customui/CommonBtn";
 
 const About = () => {
 	return (
@@ -15,7 +15,7 @@ const About = () => {
 								height={400}
 								width={400}
 								alt="Image-01"
-								className="h-auto w-full rounded-3xl md:h-auto"
+								className="h-auto w-full rounded-3xl md:aspect-auto md:h-auto"
 							/>
 
 							<Image
@@ -23,7 +23,7 @@ const About = () => {
 								height={400}
 								width={400}
 								alt="Image-02"
-								className="h-auto w-full rounded-3xl md:h-[300]"
+								className="h-auto w-full rounded-3xl md:aspect-auto md:h-[300]"
 							/>
 						</div>
 						<div className="space-y-4">
@@ -32,7 +32,7 @@ const About = () => {
 								height={400}
 								width={400}
 								alt="Image-03"
-								className="h-auto w-full rounded-3xl md:h-[300]"
+								className="aspect-auto h-auto w-full rounded-3xl md:h-[300]"
 							/>
 
 							<Image
@@ -52,16 +52,21 @@ const About = () => {
 						<div className="h-0.5 w-12 bg-orange-700"></div>
 						<div className="font-black/65 font-secondary mb-10 text-[16px]">
 							Our mission is to make travel accessible and
-							enjoyable for all. That's why we pride ourselves on
-							being budget-friendly, without compromising on
-							quality or experience. Our partnerships with trusted
-							local guides and accommodations ensure that you
-							receive the best value wherever you go.
+							enjoyable for all. That&apos;s why we pride
+							ourselves on being budget-friendly, without
+							compromising on quality or experience. Our
+							partnerships with trusted local guides and
+							accommodations ensure that you receive the best
+							value wherever you go.
 						</div>
-						<Button className="bg-orange-400 px-6 py-5 text-white hover:bg-amber-500">
-							Start planning
-							<SquareArrowRight size={24} />
-						</Button>
+						<div className="">
+							<CommonBtn
+								href={"/contact"}
+								className="">
+								Start Planing with us
+								<ChevronsRight className="mt-0.5" />
+							</CommonBtn>
+						</div>
 					</div>
 				</div>
 			</section>

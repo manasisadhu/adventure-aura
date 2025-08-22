@@ -1,18 +1,19 @@
 import Image from "next/image";
-import { Badge } from "../shadcnui/badge";
+
+import Badges from "../customui/Badges";
 
 const Custom = () => {
 	return (
 		<>
-			<div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-8 px-6 py-10 md:flex-row md:justify-between">
+			<div className="mx-auto grid max-w-7xl grid-cols-1 place-items-center gap-8 px-6 py-14 md:gap-14 md:py-18 lg:grid-cols-2">
 				<div className="space-y-6">
-					<Badge className="rounded-4xl bg-orange-400/20 px-4 py-2 text-2xl font-medium text-orange-600 dark:bg-white/20 dark:text-white">
+					<Badges className="text-xl font-medium dark:bg-orange-400/25 dark:text-orange-400">
 						Customized Itineraries
-					</Badge>
-					<div className="text-5xl font-bold">
+					</Badges>
+					<div className="text-3xl font-bold md:text-5xl">
 						We Believe That Travel is a Personal Journey
 					</div>
-					<div className="">
+					<div className="text-black/75 dark:text-white/75">
 						Our team of seasoned travel experts brings years of
 						experience and an in-depth understanding of the world’s
 						most captivating destinations. We believe that travel is
