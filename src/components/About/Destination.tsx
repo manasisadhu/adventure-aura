@@ -1,16 +1,16 @@
 import Image from "next/image";
-import { Badge } from "../shadcnui/badge";
+import Badges from "../customui/Badges";
 const Destination = () => {
 	return (
-		<section className="mx-auto max-w-7xl space-y-6 px-6 pt-20 text-center">
-			<Badge className="rounded-4xl bg-orange-400/20 px-4 py-2 text-2xl font-medium text-orange-600 dark:bg-white/20 dark:text-white">
+		<section className="mx-auto max-w-7xl space-y-6 px-6 pt-14 pb-8 text-center">
+			<Badges className="text-xl font-medium dark:bg-orange-400/25 dark:text-orange-400">
 				Trending Packages
-			</Badge>
+			</Badges>
 			<div className="text-3xl font-bold md:text-5xl">
-				Destinations You Don't Wanna Miss
+				Destinations You Don&apos;t Wanna Miss
 			</div>
 
-			<div className="grid grid-cols-1 pt-10 md:grid-cols-3 md:gap-10">
+			<div className="grid grid-cols-1 pt-6 md:grid-cols-3 md:gap-10">
 				<div className="">
 					<Image
 						src={"/about/about-destination-11.jpg"}

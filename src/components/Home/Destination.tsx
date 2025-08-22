@@ -26,7 +26,7 @@ const destination = () => {
 					<CommonBtn
 						className=""
 						href="/package">
-						Start Planing with us
+						Start Planing
 						<ChevronsRight className="mt-0.5" />
 					</CommonBtn>
 				</div>
