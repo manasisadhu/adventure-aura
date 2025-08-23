@@ -7,7 +7,9 @@ const page = () => {
 			{/* hero     */}
 			<Packagehero />
 			{/* map  */}
-			<Pack />
+			<div className="py-18">
+				<Pack />
+			</div>
 		</section>
 	);
 };
