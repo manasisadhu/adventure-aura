@@ -1,27 +1,42 @@
 import { BadgePercent, BookCheck, HeartPlus } from "lucide-react";
-import { Button } from "../shadcnui/button";
+import Badges from "../customui/Badges";
 
-const Hero = () => {
+const ContactHero = () => {
 	return (
-		<>
-			<div className="flex h-dvh flex-col items-center justify-center gap-4 bg-purple-500 bg-cover bg-fixed bg-center bg-no-repeat">
-				<Button className="rounded-2xl bg-amber-50">
-					SAY HELLO TO NEW DESTINATIONS
-				</Button>
-				<div className="text-6xl font-bold">READY TO EXPLORE ?</div>
-				<div className="text-6xl font-bold">CONTACT US !</div>
+		<div className="bg-[url('/contact/contact-hero.jpg')] bg-cover bg-center bg-no-repeat">
+			<div className="bg-black/60">
+				<div className="mx-auto flex h-[80dvh] max-w-7xl flex-col items-center justify-center gap-6 px-6 text-center md:h-[94dvh] lg:h-dvh">
+					<Badges className="text-md rounded-4xl bg-white/30 text-white">
+						SAY HELLO TO NEW DESTINATIONS
+					</Badges>
+					<div className="text-center text-white">
+						<div className="text-4xl font-bold md:text-5xl lg:text-6xl">
+							READY TO EXPLORE
+						</div>
+						<div className="text-4xl font-bold md:text-5xl lg:text-6xl">
+							CONTACT US !
+						</div>
+					</div>
 
-				<div className="flex gap-2">
-					<BookCheck size={24} />
-					<div className="">Trusted Partner</div>
-					<HeartPlus size={24} />
-					<div className="">24/7 Support</div>
-					<BadgePercent size={24} />
-					<div className="">Best Price Guarantee</div>
+					<div className="mt-4 flex flex-wrap justify-center gap-3 text-lg text-white">
+						<div className="flex items-center gap-2">
+							<BookCheck size={24} />
+							<div className="">Trusted Partner</div>
+						</div>
+						<div className="flex items-center gap-2">
+							<HeartPlus size={24} />
+							<div className="">24/7 Support</div>
+						</div>
+
+						<div className="flex items-center gap-2">
+							<BadgePercent size={24} />
+							<div className="">Best Price Guarantee</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
-export default Hero;
+export default ContactHero;
