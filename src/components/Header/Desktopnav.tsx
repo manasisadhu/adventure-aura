@@ -20,7 +20,7 @@ const Desktopnav = () => {
 					Packages
 				</Link>
 				<Link
-					href={"/"}
+					href={"/contact"}
 					className="hover:text-amber-500">
 					Contact
 				</Link>

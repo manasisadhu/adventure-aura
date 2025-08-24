@@ -1,6 +1,6 @@
 import { z } from "zod";
 export const contactSchema = z.object({
-	userName: z.string(),
+	userName: z.string().min(1),
 	userMail: z.email(),
 	mobileNo: z
 		.string()
