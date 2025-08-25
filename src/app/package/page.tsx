@@ -1,5 +1,12 @@
 import Packagehero from "@/components/Hero/Packagehero";
 import Pack from "@/components/Package/Pack";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "packages | Nextjs Starter Template",
+	description:
+		"Discover our carefully crafted travel packages designed to suit every kind of explorer. Whether you’re seeking thrilling adventures, peaceful retreats, or cultural escapes, Adventure Aura has the perfect journey waiting for you.",
+};
 
 const page = () => {
 	return (
