@@ -3,7 +3,7 @@ import Pack from "@/components/Package/Pack";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "packages | Nextjs Starter Template",
+	title: "packages | Adventure Aura",
 	description:
 		"Discover our carefully crafted travel packages designed to suit every kind of explorer. Whether you’re seeking thrilling adventures, peaceful retreats, or cultural escapes, Adventure Aura has the perfect journey waiting for you.",
 };
