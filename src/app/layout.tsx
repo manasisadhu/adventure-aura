@@ -3,6 +3,7 @@ import FooterTop from "@/components/Footer/FooterTop";
 import Header from "@/components/Header/Header";
 import ThemeProvider from "@/components/ThemeProvider";
 import { RootLayoutProps } from "@/lib/types";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 const RootLayout = ({ children }: RootLayoutProps) => {
@@ -16,8 +17,8 @@ const RootLayout = ({ children }: RootLayoutProps) => {
 					attribute={"class"}
 					defaultTheme="dark"
 					enableSystem={false}>
+					<Toaster swipeDirections={["right"]} />
 					<Header />
-
 					<main>{children}</main>
 					<FooterTop />
 					<Footer />

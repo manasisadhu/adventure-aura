@@ -18,3 +18,8 @@ export type detailsproptype = {
 	btn: string;
 	bottom: string;
 };
+
+export type Web3FormsResponse = {
+	success: boolean;
+	message: string;
+};

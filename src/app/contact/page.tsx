@@ -1,13 +1,12 @@
 import ContactUi from "@/components/Contact/ContactUi";
 import CradsDisplay from "@/components/Contact/CradsDisplay";
-import ContactHero from "@/components/Hero/ContactHero";
+import ContactHeroUi from "@/components/Hero/ContactHeroUi";
 
 const page = () => {
 	return (
 		<section>
 			{/* hero */}
-			<ContactHero />
-
+			<ContactHeroUi />
 			{/* contact sec  */}
 			<div className="mx-auto max-w-7xl px-6 py-14">
 				<ContactUi />

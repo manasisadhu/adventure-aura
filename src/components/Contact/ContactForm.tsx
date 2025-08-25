@@ -1,7 +1,11 @@
 "use client";
 import { contactSchema, contactSchemaType } from "@/lib/schema";
+import { Web3FormsResponse } from "@/lib/types";
 import { zodResolver } from "@hookform/resolvers/zod";
+import ky from "ky";
+import { Loader, Send } from "lucide-react";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 import { Button } from "../shadcnui/button";
 import {
 	Form,
@@ -26,8 +30,25 @@ const ContactForm = () => {
 		mode: "onSubmit",
 	});
 
-	const dataSubmit = (fdata: contactSchemaType) => {
+	const dataSubmit = async (fdata: contactSchemaType) => {
 		console.log(fdata);
+
+		const userData = {
+			...fdata,
+			access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+		};
+
+		const res = await ky
+			.post("https://api.web3forms.com/submit", {
+				json: userData,
+			})
+			.json<Web3FormsResponse>();
+		if (res.success) {
+			CForm.reset();
+			toast("Your Form has been submitted successfully!");
+		} else {
+			toast("There was an error submitting the form. Please try again.");
+		}
 	};
 	return (
 		<>
@@ -109,8 +130,19 @@ const ContactForm = () => {
 
 					<Button
 						type="submit"
-						className="flex cursor-pointer items-center justify-center gap-2 bg-amber-500 px-4 text-white hover:bg-orange-400">
-						Submit
+						className="flex cursor-pointer items-center justify-center gap-2 bg-amber-500 px-4 text-white hover:bg-orange-400"
+						disabled={CForm.formState.isSubmitting}>
+						{CForm.formState.isSubmitting ? (
+							<>
+								<Loader className="mr-2 animate-spin" />
+								Sending
+							</>
+						) : (
+							<>
+								<Send />
+								Send Message
+							</>
+						)}
 					</Button>
 				</form>
 			</Form>
