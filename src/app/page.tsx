@@ -7,7 +7,7 @@ import VideoSec from "@/components/Home/VideoSec";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Home | Nextjs Starter Template",
+	title: "Home | Adventure Aura",
 	description:
 		"Adventure Aura is your go-to travel guide, inspiring adventures with tips, destinations, and stories to make every journey unforgettable.",
 };
