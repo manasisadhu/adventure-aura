@@ -1,7 +1,7 @@
 import { BadgePercent, BookCheck, HeartPlus } from "lucide-react";
 import Badges from "../customui/Badges";
 
-const ContactHero = () => {
+const ContactHeroUi = () => {
 	return (
 		<div className="bg-[url('/contact/contact-hero.jpg')] bg-cover bg-center bg-no-repeat">
 			<div className="bg-black/60">
@@ -39,4 +39,4 @@ const ContactHero = () => {
 	);
 };
 
-export default ContactHero;
+export default ContactHeroUi;
