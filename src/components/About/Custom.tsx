@@ -25,7 +25,7 @@ const Custom = () => {
 				{/* img  */}
 
 				<Image
-					src={"/About/trek.jpg"}
+					src={"/about/trek.jpg"}
 					alt="pic"
 					height={800}
 					width={800}

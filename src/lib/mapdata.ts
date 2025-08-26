@@ -1,7 +1,7 @@
 export const details = [
 	{
 		id: 1,
-		img: "/Packages/packages1.jpg",
+		img: "/packages/packages1.jpg",
 		title: "Africa",
 		head: "Enchanting Mauritius",
 		clock: "5 Days/ 6 Nights",
@@ -15,7 +15,7 @@ export const details = [
 	},
 	{
 		id: 2,
-		img: "/Packages/maldives.jpg",
+		img: "packages/maldives.jpg",
 		title: "Asia",
 		head: "Majestic Maldives",
 		clock: "5 Days/ 6 Nights",
@@ -29,7 +29,7 @@ export const details = [
 	},
 	{
 		id: 3,
-		img: "/Packages/vietnam.jpg",
+		img: "/packages/vietnam.jpg",
 		title: "Asia",
 		head: "Vibrant Vietnam",
 		clock: "5 Days/ 6 Nights",
@@ -43,7 +43,7 @@ export const details = [
 	},
 	{
 		id: 4,
-		img: "/Packages/morocco.jpg",
+		img: "/packages/morocco.jpg",
 		title: "Mystical Morocco",
 		head: "Enchanting Mauritius",
 		clock: "5 Days/ 6 Nights",
